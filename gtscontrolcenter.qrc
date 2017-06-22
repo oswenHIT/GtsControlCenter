@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/GtsControlCenter">
+        <file>Resources/arrow.ico</file>
+        <file>Resources/checkmark.ico</file>
+        <file>Resources/delete.ico</file>
+        <file>Resources/down_arrow.ico</file>
+        <file>Resources/eject.ico</file>
+        <file>Resources/forward.ico</file>
+        <file>Resources/play.ico</file>
+        <file>Resources/plus.ico</file>
+        <file>Resources/repeat.ico</file>
+        <file>Resources/rewind.ico</file>
+        <file>Resources/right.ico</file>
+        <file>Resources/rrow.ico</file>
+        <file>Resources/skip_backward.ico</file>
+        <file>Resources/stop.ico</file>
+        <file>Resources/ward.ico</file>
+    </qresource>
+</RCC>
