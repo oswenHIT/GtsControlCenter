@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PlotWidget</class>
+ <widget class="QWidget" name="PlotWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>754</width>
+    <height>103</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <stylestrategy>PreferAntialias</stylestrategy>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>PlotWidget</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_2">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <property name="horizontalSpacing">
+    <number>2</number>
+   </property>
+   <property name="verticalSpacing">
+    <number>1</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">background:rgb(0, 0, 255)</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>2</number>
+     </property>
+     <property name="midLineWidth">
+      <number>1</number>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>1</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>1</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <property name="spacing">
+       <number>1</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QCustomPlot" name="customPlot1" native="true">
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCustomPlot" name="customPlot2" native="true">
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QCustomPlot" name="customPlot4" native="true">
+        <property name="font">
+         <font>
+          <stylestrategy>PreferAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3"/>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QCustomPlot" name="customPlot3" native="true">
+        <property name="cursor">
+         <cursorShape>ArrowCursor</cursorShape>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>3</number>
+     </property>
+     <item>
+      <widget class="QCheckBox" name="trackCheckBox">
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>10</pointsize>
+         <weight>50</weight>
+         <bold>false</bold>
+         <underline>false</underline>
+         <strikeout>false</strikeout>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
+       <property name="text">
+        <string> Track </string>
+       </property>
+       <property name="tristate">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearButton">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(248, 248, 255);
+border-color: rgb(0, 0, 85);
+min-width: 4em;
+min-height:1.2em;
+padding: 6px;
+font: Arial 19px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(119, 26, 26, 216));
+pressed{background: white;};</string>
+       </property>
+       <property name="text">
+        <string>Clear</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveButton">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(248, 248, 255);
+border-color: rgb(0, 0, 85);
+min-width: 4em;
+min-height:1.2em;
+padding: 6px;
+font: Arial 19px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(0, 26, 166, 157))</string>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="infoLabel">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>300</width>
+         <height>33</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>20px</family>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-style: outset;
+border-width: 2px;
+border-radius: 10px;
+border-color:rgb(85, 85, 0);
+min-width: 12em;
+min-height:1.4em;
+padding: 6px;
+font: Arial 20px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(238, 210, 238, 104))</string>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Box</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="text">
+        <string>             ---             </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="margin">
+        <number>3</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>48</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="axisOneButton">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(248, 248, 255);
+border-color: rgb(0, 0, 85);
+min-width: 4em;
+min-height:1.2em;
+padding: 6px;
+font: Arial 19px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(0, 26, 166, 157))</string>
+       </property>
+       <property name="text">
+        <string>Axis One</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="axisTwoButton">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(248, 248, 255);
+border-color: rgb(0, 0, 85);
+min-width: 4em;
+min-height:1.2em;
+padding: 6px;
+font: Arial 19px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(0, 26, 166, 157))</string>
+       </property>
+       <property name="text">
+        <string>Axis Two</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="axisThreeButton">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(248, 248, 255);
+border-color: rgb(0, 0, 85);
+min-width: 4em;
+min-height:1.2em;
+padding: 6px;
+font: Arial 19px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(0, 26, 166, 157))</string>
+       </property>
+       <property name="text">
+        <string>Axis Three</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="axisFourButton">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(248, 248, 255);
+border-color: rgb(0, 0, 85);
+min-width: 4em;
+min-height:1.2em;
+padding: 6px;
+font: Arial 19px;
+background:qlineargradient(spread:reflect, x1:0.555, y1:0.471818, x2:0.704, y2:0.692864, stop:1 rgba(0, 26, 166, 157))</string>
+       </property>
+       <property name="text">
+        <string>Axis Four</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="Line" name="line">
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
